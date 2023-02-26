@@ -1,0 +1,10 @@
+_G.autotap = true  --change to false for autoclicker to stop
+while _G.autotap == true do
+    local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Rebirth"):FireServer(unpack(args))
+    
+    wait()
+end
